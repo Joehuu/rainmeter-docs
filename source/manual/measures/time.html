@@ -70,14 +70,14 @@ title: 'Time measure'
 		<li><code>TimeStamp=1/27/2105 15:22:30</code></li>
 		<li><code>TimeStamp=Tuesday, January 27, 2015 at 15:22:30</code></li>
 		</ul>
-		<p>Any date and time format can be used, as long as the constituent values can be expressed with any combination of the the Time <a href="#FormatCodes">Format codes</a> and text. This form of the TimeStamp option MUST be used in conjunction with a matching <a href="#TimeStampFormat">TimeStampFormat</a> option, which will be used to create a <em>mask</em> that will define the structure and values of the date and time string.</p>
+		<p>Any date and time format can be used, as long as the constituent values can be expressed with any combination of the Time <a href="#FormatCodes">Format codes</a> and text. This form of the TimeStamp option MUST be used in conjunction with a matching <a href="#TimeStampFormat">TimeStampFormat</a> option, which will be used to create a <em>mask</em> that will define the structure and values of the date and time string.</p>
 	</dd>
 
 	<dt id="TimeStampFormat"><code>TimeStampFormat</code></dt>
 	<dd>
 		<p>The TimeStampFormat option creates a <em>mask</em> that defines the structure and values used in a matching <a href="#TimeStampString">TimeStamp</a> formatted date and/or time string. If the TimeStamp option is not defined, or if the TimeStampFormat mask does not match the format of the TimeStamp option, an error will be produced.</p>
 
-		<p>The TimeStampFormat is created with any combination of the the Time <a href="#FormatCodes">Format codes</a> and text, to create a mask of the TimeStamp option's formatted date and/or time string.<p>
+		<p>The TimeStampFormat is created with any combination of the Time <a href="#FormatCodes">Format codes</a> and text, to create a mask of the TimeStamp option's formatted date and/or time string.<p>
 
 		<p><b>Note:</b> If the year is <b>not</b> defined in the <code>TimeStamp</code> option, then <b>1900</b> will be used as the default year.
 

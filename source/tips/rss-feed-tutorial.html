@@ -470,7 +470,7 @@ Substitute="^\s+":"","<!\[CDATA\[":"","\]\]>":"","!\[CDATA\[":"","\]\]":""
 Item=(?(?=.*<item>).*<item>.*<title>(.*)</title>.*<link>(.*)</link>.*<pubDate>(.*)</pubDate>)
 ```
 
-<p>Then we are saying "look ahead" <code>(?</code> for a string that equals <code>(?=</code> .*&lt;item&gt;)"  Note the trailing parentheses to end the "look for" part of the expression. If the string <code>.*&lt;item&gt;</code> is found, then execute the the parse <code>.*&lt;item&gt;.*&lt;title&gt;(.*)&lt;/title&gt;.*&lt;link&gt;(.*)&lt;/link&gt;.*&lt;pubDate&gt;(.*)&lt;/pubDate&gt;</code>. Note that then we follow the entire thing with another ending parentheses, to end the "look ahead" part of the expression.</p>
+<p>Then we are saying "look ahead" <code>(?</code> for a string that equals <code>(?=</code> .*&lt;item&gt;)"  Note the trailing parentheses to end the "look for" part of the expression. If the string <code>.*&lt;item&gt;</code> is found, then execute the parse <code>.*&lt;item&gt;.*&lt;title&gt;(.*)&lt;/title&gt;.*&lt;link&gt;(.*)&lt;/link&gt;.*&lt;pubDate&gt;(.*)&lt;/pubDate&gt;</code>. Note that then we follow the entire thing with another ending parentheses, to end the "look ahead" part of the expression.</p>
 
 <p>If the lookahead assertion fails, only that part contained in it will be ignored, and any other parts of the expression will still be evaluated and return data.</p>
 
